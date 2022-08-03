@@ -11,6 +11,7 @@
   --light-color-text: #606770;
   --button-link: #e0e2e8;
   --stories-bg: #090909;
+  --icon-color: #797f86;
 }
 
 body {
@@ -24,9 +25,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 12px;
-  margin-right: 12px;
   height: 42px;
+  background-color: var(--fb-white);
 }
 
 .header__desktop-logo {
@@ -35,6 +35,7 @@ body {
 
 .header__mobile-logo {
   width: 7.13rem;
+  margin-left: 12px;
 }
 
 .header__search {
@@ -48,6 +49,7 @@ body {
 gap: 8px;
 font-size: 1.3rem;
 margin-left: auto;
+margin-right: 12px;
 }
 
 .header__mobile-doMore-icons > i {
@@ -59,6 +61,33 @@ margin-left: auto;
   border-radius: 26px;
 }
 
+.header__desktop-bell {
+  display: none;
+  font-size: 0px;
+}
+
+.header__desktop-dots > svg {
+ display: none;
+}
+
+.header__desktop-messenger-icon {
+display: none;
+}
+
+.header__mobile-search {
+  background-color: rgb(228, 228, 228);
+  padding-top: .37rem;
+  padding-bottom: .37rem;
+  padding-left: .37rem;
+  padding-right: .37rem;
+  border-radius: 26px;
+}
+
+.header__desktop-profile-img-container {
+  display: none;
+}
+
+
 .header__nav-tabs {
   position: absolute;
   display: flex;
@@ -67,13 +96,15 @@ margin-left: auto;
   justify-content: center;
   height: 42px;
   width: 100%;
- top: 55px;
+ top: 42px;
  right: 0;
  left: 0;
  gap: 15%;
  font-size: 1.4rem;
- padding-bottom: 15px;
+ padding-bottom: 25px;
+ padding-top: 30px;
  border-bottom: 2px solid rgb(192, 192, 192);
+ background-color: var(--fb-white);
 }
 
 .fa-house {
@@ -84,37 +115,81 @@ margin-left: auto;
   color: #606770;
   background-color: #fff;
 }
-
-.header__notification-bubble {
-  position: absolute;
-  color: var(--fb-bgcolor);
-  top: -3px;
-  margin-left: 12px;
-  font-size: .75rem;
-  background-color: var(--fb-red);
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 6px;
-  padding-left: 6px;
-  border-radius: 50px;
+.header__nav-friends {
+  display: flex;
+  align-items: center;
 }
 
-.header__notification-bubble-plus {
-  position: absolute;
-  top: -8px;
-  margin-left: 15px;
-  color: var(--fb-bgcolor);
-  font-size: .5rem;
-  background-color: var(--fb-red);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 50px;
+  .header__nav-friends > svg {
+    color: var(--icon-color);
+  }
+
+.fa-tv {
+  color: var(--icon-color);
 }
+
+.header__nav-market {
+ color: var(--icon-color);
+ display: flex;
+ align-items: center;
+}
+
+.header__group-icon {
+  color: var(--icon-color);
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 1px;
+}
+
+
+.header__notification-bubble-one {
+  position: absolute;
+    color: var(--fb-bgcolor);
+    top: 8px;
+    margin-left: 15px;
+    font-size: .75rem;
+    background-color: var(--fb-red);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 50px;
+}
+  
+  .header__notification-bubble {
+    position: absolute;
+    color: var(--fb-bgcolor);
+    top: 10px;
+    margin-left: 12px;
+    font-size: .75rem;
+    background-color: var(--fb-red);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 50px;
+  }
+  
+  .header__notification-bubble-plus {
+    position: absolute;
+    top: 8px;
+    margin-left: 15px;
+    color: var(--fb-bgcolor);
+    font-size: .5rem;
+    background-color: var(--fb-red);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 50px;
+  }
 }
 /* Mobile + tablet ---- End*/
 
+
+/* Desktop ----------- */
 @media (min-width:769px) and (max-width: 900px) {
   .header {
     display: flex;
@@ -123,6 +198,7 @@ margin-left: auto;
     width: 100%;
     height: 56px;
     box-shadow: 0px 0px 5px rgb(209, 209, 209);
+    background-color: var(--fb-white);
   }
 
   .header__mobile-logo {
@@ -170,10 +246,48 @@ background-color: rgb(228, 228, 228);
     color: var(--fb-blue);
   }
   
-  .fa-facebook-messenger {
-    color: #606770;
-    background-color: #fff;
+.header__nav-friends {
+  display: flex;
+  align-items: center;
+}
+
+  .header__nav-friends > svg {
+    color: var(--icon-color);
   }
+
+.fa-tv {
+  color: var(--icon-color);
+}
+
+.header__nav-market {
+ color: var(--icon-color);
+ display: flex;
+ align-items: center;
+}
+
+.header__group-icon {
+  color: var(--icon-color);
+  display: flex;
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 1px;
+}
+
+
+.header__notification-bubble-one {
+  position: absolute;
+    color: var(--fb-bgcolor);
+    top: -3px;
+    margin-left: 15px;
+    font-size: .75rem;
+    background-color: var(--fb-red);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 50px;
+}
   
   .header__notification-bubble {
     position: absolute;
@@ -202,4 +316,80 @@ background-color: rgb(228, 228, 228);
     padding-left: 5px;
     border-radius: 50px;
   }
+
+  .header__mobile-doMore-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  margin-left: auto;
+  padding-right: 12px;
+  }
+  
+ .header__mobile-search {
+   display: none;
+ }
+
+.header__desktop-dots {
+  display: flex;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    border-radius: 26px;
+}
+
+.header__desktop-dots > svg {
+  height: 1.9rem;
+  width: 1.9rem;
+}
+
+.header__desktop-messenger-icon {
+  display: flex;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  padding-top: .65rem;
+    padding-bottom: .65rem;
+    padding-left: .65rem;
+    padding-right: .65rem;
+    border-radius: 26px;
+    font-size: 1.35rem;
+}
+
+.header__desktop-bell {
+  display: flex;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  padding-top: .65rem;
+    padding-bottom: .65rem;
+    padding-left: .65rem;
+    padding-right: .65rem;
+    border-radius: 26px;
+    font-size: 1.35rem;
+}
+
+.header__desktop-profile-img-container {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.header__desktop-profile-img-container > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.fa-user {
+  display: none;
+  font-size: 0;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 0;
+}
+
 }
