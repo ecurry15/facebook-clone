@@ -11,7 +11,7 @@
   --light-color-text: #606770;
   --button-link: #e0e2e8;
   --stories-bg: #090909;
-  --icon-color: #797f86;
+  --icon-color: #5d6166;
 }
 
 body {
@@ -65,16 +65,16 @@ margin-right: 12px;
 display: flex;
 align-items: center;
   background-color: rgb(228, 228, 228);
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 26px;
 }
 
 .header__doMore-account-img {
-  height: 28px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
 }
 
 .header__desktop-bell {
@@ -109,24 +109,25 @@ display: none;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 42px;
   width: 100%;
  top: 42px;
  right: 0;
  left: 0;
- gap: 12%;
  font-size: 1.4rem;
  padding-bottom: 25px;
  padding-top: 30px;
+ padding-left: 8%;
+ padding-right: 8%;
  border-bottom: 2px solid rgb(192, 192, 192);
  background-color: var(--fb-white);
 }
 
 .header__nav-house {
   color: var(--fb-blue);
-  height: 28px;
-  width: 28px;
+  height: 26px;
+  width: 26px;
 }
 
 .header__nav-friends {
@@ -136,8 +137,8 @@ display: none;
 
 .header__nav-friends-icon {
     color: var(--icon-color);
-    height: 28px;
-  width: 28px;
+    height: 26px;
+  width: 26px;
   }
 
 .header__nav-tv {
@@ -145,20 +146,41 @@ display: none;
   align-items: center;
 }
 
-.header__nav-tv-icon {
-  height: 28px;
-  width: 28px;
+
+.header-mobile-messenger-icon {
+  height: 26px;
+  width: 26px;
   color: var(--icon-color);
+}
+
+.header__nav-tv-icon {
+  height: 26px;
+  width: 26px;
+  color: var(--icon-color);
+}
+
+.header-mobile-bell {
+  display: flex;
+  align-content: center;
+}
+
+.header-mobile-bell-icon {
+fill: none;
+stroke: var(--icon-color);
+stroke-width: 2px;
+height: 26px;
+width: 26px;
 }
 
 .header__nav-market {
  display: flex;
  align-items: center;
+ display: none;
 }
 
 .header__nav-market-icon {
-  height: 28px;
-  width: 28px;
+  height: 26px;
+  width: 26px;
   color: var(--icon-color);
 }
 
@@ -177,9 +199,9 @@ display: none;
 .header__notification-bubble-one {
   position: absolute;
     color: var(--fb-bgcolor);
-    top: 8px;
+    top: 10px;
     margin-left: 15px;
-    font-size: .75rem;
+    font-size: .8rem;
     background-color: var(--fb-red);
     padding-top: 2px;
     padding-bottom: 2px;
@@ -191,9 +213,9 @@ display: none;
   .header__notification-bubble {
     position: absolute;
     color: var(--fb-bgcolor);
-    top: 10px;
+    top: 12px;
     margin-left: 12px;
-    font-size: .75rem;
+    font-size: .8rem;
     background-color: var(--fb-red);
     padding-top: 2px;
     padding-bottom: 2px;
@@ -204,15 +226,15 @@ display: none;
   
   .header__notification-bubble-plus {
     position: absolute;
-    top: 8px;
-    margin-left: 15px;
+    top: 10px;
+    margin-left: 12px;
     color: var(--fb-bgcolor);
-    font-size: .5rem;
+    font-size: .8rem;
     background-color: var(--fb-red);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 3px;
+    padding-left: 3px;
     border-radius: 50px;
   }
 }
@@ -302,10 +324,15 @@ background-color: rgb(228, 228, 228);
 }
 
 .header__nav-market {
- color: var(--icon-color);
- display: flex;
- align-items: center;
-}
+  display: flex;
+  align-items: center;
+ }
+ 
+ .header__nav-market-icon {
+   height: 28px;
+   width: 28px;
+   color: var(--icon-color);
+ }
 
 .header__group-icon {
   color: var(--icon-color);
