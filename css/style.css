@@ -12,6 +12,7 @@
   --button-link: #e0e2e8;
   --stories-bg: #090909;
   --icon-color: #5d6166;
+  --search-icon-color: #F0F2F5;
 }
 
 body {
@@ -259,8 +260,8 @@ width: 26px;
   }
 
   .header__desktop-logo {
-    padding-left: 12px;
-    font-size: 2.4rem;
+    padding-left: 13px;
+    font-size: 2.6rem;
     color: var(--fb-blue);
   }
 
@@ -272,12 +273,13 @@ width: 26px;
 margin-left: 8px;
 color: var(--light-color-text);
 font-size: 1rem;
-padding-top: .6rem;
-  padding-bottom: .6rem;
-  padding-left: .6rem;
-  padding-right: .6rem;
+padding-top: 10.5px;
+  padding-bottom: 10.5px;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 26px;
-background-color: rgb(228, 228, 228);
+background-color: var(--search-icon-color);
+cursor: pointer;
 }
 
 .header__search-input {
@@ -289,67 +291,112 @@ background-color: rgb(228, 228, 228);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    margin-left: 15%;
     width: 100%;
    font-size: 1.4rem;
   }
   
-  .fa-house {
+.header-nav-house-container {
+  display: flex;
+  position: relative;
+  align-content: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+}
+
+.header-nav-house-container::after {
+content: '';
+display: block;
+position: absolute;
+width: 100%;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 3px;
+background-color: var(--fb-blue);
+z-index: 10;
+}
+
+  .header__nav-house {
     color: var(--fb-blue);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 29px;
+    width: 29px;
+  }
+
+  .header__nav-friends {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
   }
   
-.fa-house:hover {
-  background-color: #797f86;
-}
+  .header__nav-friends-icon {
+      color: var(--icon-color);
+      height: 29px;
+    width: 29px;
+    }
 
-.header__nav-friends {
+.header__nav-tv {
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
 }
 
-  .header__nav-friends > svg {
-    color: var(--icon-color);
-  }
-
-  .header__nav-friends > svg:hover {
-    background-color: #797f86;
-  }
-
-.fa-tv {
-  color: var(--icon-color);
-}
+    .header__nav-tv-icon {
+      height: 29px;
+      width: 29px;
+      color: var(--icon-color);
+    }
 
 .header__nav-market {
   display: flex;
   align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
  }
  
  .header__nav-market-icon {
-   height: 28px;
-   width: 28px;
+   height: 29px;
+   width: 29px;
    color: var(--icon-color);
  }
 
-.header__group-icon {
-  color: var(--icon-color);
+ .header__group {
   display: flex;
   align-items: center;
-  border: 2px solid grey;
-  border-radius: 20px;
-  padding: 1px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  cursor: pointer;
+}
+
+.header__group-icon {
+  color: var(--icon-color);
+  height: 29px;
+  width: 29px;
 }
 
 
 .header__notification-bubble-one {
   position: absolute;
     color: var(--fb-bgcolor);
-    top: -3px;
+    top: 6px;
     margin-left: 15px;
-    font-size: .75rem;
+    font-size: .85rem;
     background-color: var(--fb-red);
     padding-top: 2px;
     padding-bottom: 2px;
@@ -361,9 +408,9 @@ background-color: rgb(228, 228, 228);
   .header__notification-bubble {
     position: absolute;
     color: var(--fb-bgcolor);
-    top: -3px;
-    margin-left: 12px;
-    font-size: .75rem;
+    top: 8px;
+    margin-left: 15px;
+    font-size: .95rem;
     background-color: var(--fb-red);
     padding-top: 2px;
     padding-bottom: 2px;
@@ -374,15 +421,15 @@ background-color: rgb(228, 228, 228);
   
   .header__notification-bubble-plus {
     position: absolute;
-    top: -8px;
+    top: 5px;
     margin-left: 15px;
     color: var(--fb-bgcolor);
-    font-size: .5rem;
+    font-size: .85rem;
     background-color: var(--fb-red);
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 3px;
+    padding-left: 3px;
     border-radius: 50px;
   }
 
@@ -393,12 +440,18 @@ background-color: rgb(228, 228, 228);
   gap: 8px;
   font-size: 1.3rem;
   margin-left: auto;
-  padding-right: 12px;
+  padding-right: 13px;
+  cursor: pointer;
   }
   
  .header__mobile-search {
    display: none;
  }
+
+.header__doMore-account {
+  display: none;
+}
+
 
 .header__desktop-dots {
   display: flex;
@@ -412,8 +465,8 @@ background-color: rgb(228, 228, 228);
 }
 
 .header__desktop-dots > svg {
-  height: 1.9rem;
-  width: 1.9rem;
+  height: 26px;
+  width: 26px;
 }
 
 .header__desktop-messenger-icon {
@@ -425,7 +478,7 @@ background-color: rgb(228, 228, 228);
     padding-left: .65rem;
     padding-right: .65rem;
     border-radius: 26px;
-    font-size: 1.35rem;
+    font-size: 18px;
 }
 
 .header__desktop-bell {
@@ -438,6 +491,11 @@ background-color: rgb(228, 228, 228);
     padding-right: .65rem;
     border-radius: 26px;
     font-size: 1.35rem;
+}
+
+.header__desktop-bell-icon {
+  height: 20px;
+  width: 20px;
 }
 
 .header__desktop-profile-img-container {
