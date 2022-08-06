@@ -118,10 +118,10 @@ display: none;
  left: 0;
  font-size: 1.4rem;
  padding-bottom: 25px;
- padding-top: 30px;
- padding-left: 8%;
- padding-right: 8%;
- border-bottom: 2px solid rgb(192, 192, 192);
+ padding-top: 24px;
+ padding-left: 5.9%;
+ padding-right: 5.9%;
+ border-bottom: 2px solid rgb(206, 206, 206);
  background-color: var(--fb-white);
 }
 
@@ -169,8 +169,8 @@ display: none;
 fill: none;
 stroke: var(--icon-color);
 stroke-width: 2px;
-height: 26px;
-width: 26px;
+height: 23px;
+width: 23px;
 }
 
 .header__nav-market {
@@ -193,14 +193,14 @@ width: 26px;
 
 .header__group-icon {
   color: var(--icon-color);
-  height: 28px;
-  width: 28px;
+  height: 24px;
+  width: 24px;
 }
 
 .header__notification-bubble-one {
   position: absolute;
     color: var(--fb-bgcolor);
-    top: 10px;
+    top: 6px;
     margin-left: 15px;
     font-size: .8rem;
     background-color: var(--fb-red);
@@ -209,12 +209,13 @@ width: 26px;
     padding-right: 6px;
     padding-left: 6px;
     border-radius: 50px;
+    border: 2px solid var(--fb-white);
 }
   
   .header__notification-bubble {
     position: absolute;
     color: var(--fb-bgcolor);
-    top: 12px;
+    top: 6px;
     margin-left: 12px;
     font-size: .8rem;
     background-color: var(--fb-red);
@@ -223,20 +224,22 @@ width: 26px;
     padding-right: 6px;
     padding-left: 6px;
     border-radius: 50px;
+    border: 2px solid var(--fb-white);
   }
   
   .header__notification-bubble-plus {
     position: absolute;
-    top: 10px;
+    top: 5px;
     margin-left: 12px;
     color: var(--fb-bgcolor);
     font-size: .8rem;
     background-color: var(--fb-red);
     padding-top: 4px;
     padding-bottom: 4px;
-    padding-right: 3px;
-    padding-left: 3px;
+    padding-right: 2px;
+    padding-left: 2px;
     border-radius: 50px;
+    border: 2px solid var(--fb-white);
   }
 }
 /* Mobile + tablet ---- End* --------------------------/
@@ -394,7 +397,7 @@ z-index: 10;
 .header__notification-bubble-one {
   position: absolute;
     color: var(--fb-bgcolor);
-    top: 6px;
+    top: 8px;
     margin-left: 15px;
     font-size: .85rem;
     background-color: var(--fb-red);
@@ -403,12 +406,13 @@ z-index: 10;
     padding-right: 6px;
     padding-left: 6px;
     border-radius: 50px;
+    border: 2px solid var(--fb-white);
 }
   
   .header__notification-bubble {
     position: absolute;
     color: var(--fb-bgcolor);
-    top: 8px;
+    top: 10px;
     margin-left: 15px;
     font-size: .95rem;
     background-color: var(--fb-red);
@@ -417,20 +421,22 @@ z-index: 10;
     padding-right: 6px;
     padding-left: 6px;
     border-radius: 50px;
+    border: 2px solid var(--fb-white);
   }
   
   .header__notification-bubble-plus {
     position: absolute;
-    top: 5px;
+    top: 9px;
     margin-left: 15px;
     color: var(--fb-bgcolor);
     font-size: .85rem;
     background-color: var(--fb-red);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 3px;
-    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 2px;
+    padding-left: 2px;
     border-radius: 50px;
+    border: 2px solid var(--fb-white);
   }
 
   .header__mobile-doMore-icons {
@@ -457,10 +463,10 @@ z-index: 10;
   display: flex;
   align-items: center;
   background-color: rgb(228, 228, 228);
-  padding-top: .3rem;
-    padding-bottom: .3rem;
-    padding-left: .3rem;
-    padding-right: .3rem;
+  padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6.5px;
+    padding-right: 6.5px;
     border-radius: 26px;
 }
 
