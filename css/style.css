@@ -266,6 +266,7 @@ color: var(--fb-blue);
   font-size: 1.4rem;
 }
 
-.header__link-icon {
-  
+.header__circle-link:hover,
+.header__user-img:hover {
+  filter: brightness(.9);
 }
