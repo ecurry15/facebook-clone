@@ -19,10 +19,20 @@
         <div class="header__logo-icon">
           <i class="fab fa-facebook"></i>
         </div>
-        <div class="header__logo-search">
-          <i class="fas fa-search"></i>
-          <input type="text">
+        <div class="header__logo-search" data-search-bar>
+          <i class="fas fa-search" data-search-bar></i>
+          <input type="text" placeholder="Search Facebook" data-search-bar>
         </div>
+      </div>
+      <div class="header__search-dropDown" id="header__search-dropDown" data-dropDown>
+        <div class="search-dropDown__arrow-and-search" data-dropDown>
+          <i class="fa-solid fa-arrow-left" id="search-dropDown__arrow"></i>
+          <div class="search-dropDown__search-section" data-dropDown>
+            <i class="search-dropDown__icon fas fa-search" id="search-dropDown__icon fas fa-search" data-dropDown></i>
+            <input type="text" class="search-dropDown__input" placeholder="Search Facebook" data-dropDown>
+          </div>
+        </div>
+        <p class="search-dropDown__searches" data-dropDown>No recent searches</p>
       </div>
       <div class="header__menu-tabs">
         <div class="header__menu-tab header__menu-tab--active">
@@ -46,8 +56,24 @@
         </div>
       </div>
       <div class="header__account">
-        a
+        <div class="header__actions">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="" class="header__user-img">
+          <span class="header__user-name">Jane Doe</span>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fas fa-plus"></i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fab fa-facebook-messenger"></i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fas fa-bell"></i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fas fa-sort-down"></i>
+          </a>
+        </div>
       </div>
     </header>
   </body>
+  <script src="index.js"></script>
 </html>
