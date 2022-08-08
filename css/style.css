@@ -172,15 +172,37 @@ color: var(--fb-blue);
 }
 
 .header__menu-tab--active .fas,
-.header__menu-tab--active .fab
+.header__menu-tab--active .fab,
+.header__menu-tab--active svg
 {
 color: var(--fb-blue);
 }
 
 .header__menu-tab .fas,
-.header__menu-tab .fab 
+.header__menu-tab .fab,
+.header__menu-tab--active svg 
 {
   position: relative;
+}
+
+.header__nav-house ,
+.header__nav-friends-icon,
+.header__nav-tv-icon,
+.header__nav-market-icon
+{
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+
+.header__svg-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-tab:hover .header__svg-container > svg {
+  color: var(--fb-blue);
 }
 
 .header__notification-bubble {
@@ -196,9 +218,9 @@ color: var(--fb-blue);
   border-radius: 50%;
   border: 3px solid white;
   position: absolute;
-  top: -15px;
-  right: -10px;
   font-weight: 700;
+  top: 5px;
+  margin-left: 15px;
 }
 
 .header__acount {
