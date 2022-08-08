@@ -51,6 +51,7 @@ body {
 .header__logo-icon .fa-facebook {
 color: var(--fb-blue);
 font-size: 40px;
+cursor: pointer;
 }
 
 .header__logo-search {
@@ -63,6 +64,7 @@ margin-left: 10px;
   top: 14px;
   left: 10px;
   color: var(--light-color-text);
+  cursor: pointer;
 }
 
 .header__logo-search input {
@@ -133,8 +135,8 @@ padding-left: 22px;
 .search-dropDown__searches {
   align-self: center;
   margin-top: 22px;
-  color: var(--light-color-text);
-  letter-spacing: .5px;
+  color: rgb(150, 150, 150);
+  letter-spacing: .3px;
   font-size: 1rem;
 }
 
@@ -214,6 +216,7 @@ color: var(--fb-blue);
   height: 35px;
   width: 35px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .header__user-name {
