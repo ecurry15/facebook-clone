@@ -459,3 +459,71 @@ color: var(--fb-blue);
   top: -113px;
   left: 10px;
 }
+
+.feed__box {
+  padding: 20px;
+  background-color: var(--fb-whitebg);
+  max-width: 700px;
+  width: 100%;
+  flex: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .25);
+  margin-bottom: 20px;
+}
+
+.newPost {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.newPost__user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.newPost > input {
+  background-color: var(--fb-bgcolor);
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--light-color-text);
+  padding-left: 20px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.hLine {
+  height: 1px;
+  background-color: var(--button-link);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.post-types {
+  display: flex;
+  justify-content: space-between;
+}
+.post-types__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.post-types__item .fas,
+.post-types__item .fab {
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.post-types__item .fa-video {
+  color: var(--fb-red);
+}
+.post-types__item .fa-photo-video {
+  color: var(--fb-green);
+}
+.post-types__item .fa-laugh-beam {
+  color: var(--fb-yellow);
+}
