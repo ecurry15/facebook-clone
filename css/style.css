@@ -19,6 +19,11 @@ outline: none;
     --light-color-text: #606770;
     --button-link: #e0e2e8;
     --stories-bg: #090909;
+    --icon-circle-bg: linear-gradient(
+      0deg,
+      rgb(67, 65, 49) 0%,
+      rgba(107, 110, 114, 1) 100%
+    );
   }
 
 
@@ -269,4 +274,107 @@ color: var(--fb-blue);
 .header__circle-link:hover,
 .header__user-img:hover {
   filter: brightness(.9);
+}
+
+.content-area--feed {
+  padding: 90px 15px 20px;
+  display: flex;
+}
+
+.sideNav {
+  width: 25%;
+}
+
+.sideNav__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sideNav__item-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sideNav__item-title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sideNav__item-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.sideNav__item-notification {
+  color: var(--fb-blue);
+  margin-top: 5px;
+  font-size: .75rem;
+  display: block;
+  font-weight: 300;
+}
+
+.sideNav__item-notification-circle {
+  background-color: var(--fb-blue);
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.sideNav__item-icon--circle {
+  background-color: var(--button-link);
+  border-radius: 50%;
+  font-size: .9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+.sideNav__item-icon--circle-white {
+  background: var(--icon-circle-bg);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.sideNav__item-icon .fas,
+.sideNav__item-icon .fab {
+  color: var(--fb-blue);
+}
+.sideNav__item-icon--circle .fas,
+.sideNav__item-icon--circle .fab {
+  color: var(--fb-black);
+}
+.sideNav__item-icon--circle-white .fas,
+.sideNav__item-icon--circle-white .fab {
+  color: var(--fb-white);
+}
+
+.sideNav__line {
+  height: 3px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+  background-color: var(--button-link);
+}
+
+.sideNav__heading-title {
+  display: block;
+  color: var(--light-color-text);
+  margin-bottom: 15px;
 }
