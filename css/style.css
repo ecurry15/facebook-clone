@@ -819,6 +819,10 @@ color: var(--fb-blue);
   border-radius: 5px;
   margin-bottom: 10px;
 }
+.joinGroup-section__joinBtn:hover {
+  filter: brightness(.9);
+}
+
 .seeMore {
   position: relative;
   text-decoration: none;
@@ -829,6 +833,7 @@ color: var(--fb-blue);
  margin-bottom: 10px;
  padding: 6px 0px;
  width: 22%;
+ border-radius: 5px;
 }
 .seeMore:hover {
 background-color: var(--button-link);
