@@ -665,3 +665,40 @@ color: var(--fb-blue);
 .photoPost__link .fas {
   margin-right: 10px;
 }
+
+.groups {
+  margin-left: 200px;
+}
+.groups__conversations {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--light-color-text);
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.groups__createNew {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.groups__createNew:hover {
+  background-color: #d6d8df;
+}
+
+.groups__createNew-icon {
+  font-size: 1.9rem;
+  background-color: var(--button-link);
+  margin-right: 10px;
+  padding: 3px 10px 5px 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.groups__createNew > span {
+  letter-spacing: .3px;
+}
