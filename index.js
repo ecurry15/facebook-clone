@@ -3,11 +3,11 @@ const headerSearchDropDown = document.getElementById('header__search-dropDown');
 const searchDropDownArrow = document.getElementById('search-dropDown__arrow');
 const searchDropdownInput = document.querySelector('.search-dropDown__input');
 const searchDropDownIcon = document.getElementById('search-dropDown__icon fas fa-search');
-let dropDownIsOpen = false;
+const groupsSuggested = document.getElementById('groupsSuggested');
+const groupsSuggestedInfoClose = document.getElementById('groupsSuggestedInfoClose');
 
 const closeDropDown = () => {
   headerSearchDropDown.style.display = "none";
-  dropDownIsOpen = false
 }
 
 headerSearch.addEventListener('click', function() {
@@ -37,4 +37,8 @@ headerSearchDropDown.addEventListener('click', function (e) {
   searchDropdownInput.style.paddingLeft = "20px";
   searchDropDownIcon.style.display = "none";
  }
+})
+
+groupsSuggestedInfoClose.addEventListener('click', function() {
+  groupsSuggested.style.display = "none";
 })
