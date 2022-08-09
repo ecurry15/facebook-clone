@@ -823,9 +823,15 @@ color: var(--fb-blue);
   position: relative;
   text-decoration: none;
   color: var(--fb-blue);
- text-align: right;
- margin-right: 20px;
+ text-align: center;
+ margin-left: auto;
+ right: 15px;
  margin-bottom: 10px;
+ padding: 6px 0px;
+ width: 22%;
+}
+.seeMore:hover {
+background-color: var(--button-link);
 }
 
 .suggested-content__right-arrow {
