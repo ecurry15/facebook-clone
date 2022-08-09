@@ -516,6 +516,7 @@ color: var(--fb-blue);
 .post-types__item .fab {
   margin: 10px;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .post-types__item .fa-video {
@@ -526,4 +527,141 @@ color: var(--fb-blue);
 }
 .post-types__item .fa-laugh-beam {
   color: var(--fb-yellow);
+}
+
+.photoPost {
+  padding: 0 0 20px;
+  margin-bottom: 20px;
+}
+.photoPost__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 20px;
+}
+.photoPost__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photoPost__left > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 10px 10px 0px;
+}
+.photoPost__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.photoPost__name {
+  font-size: .9rem;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.photoPost__date {
+  font-size: .7rem;
+  color: var(--light-color-text);
+}
+.photoPost__info .fa-ellipsis-h {
+  color: var(--light-color-text);
+}
+.photoPost__description {
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+.photoPost__img > img {
+  width: 100%;
+}
+
+.photoPost__stats {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: var(--light-color-text);
+  font-weight: 300;
+  font-size: .9rem;
+  border-left: 2.5px solid var(--fb-blue);
+}
+.photoPost__stats-emojis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emoji-circle {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: #090909;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: .6rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+}
+
+.fa-surprise {
+  font-size: 1.3rem;
+  color: rgba(246,174,36,1);
+}
+
+.emoji-circle:nth-child(1){
+  z-index: 3;
+}
+.emoji-circle:nth-child(2){
+  left: -5px;
+  z-index: 2;
+}
+.emoji-circle:nth-child(3){
+  left: -10px;
+  z-index: 1;
+}
+.emoji-circle--blue {
+  background: linear-gradient(0deg, rgba(4,60,108,1) 0%, rgba(10,134,240,1) 100%);
+}
+.emoji-circle--red {
+  background: linear-gradient(0deg, rgba(92,15,26,1) 0%, rgba(238,35,64,1) 100%);
+}
+.emoji-circle--yellow {
+  background: black;
+  overflow: hidden;
+}
+.emoji-circle--blue .fa-thumbs-up {
+  position: relative;
+  top: -1px;
+}
+
+.photoPost__hLine {
+  height: 1px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--button-link);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.photoPost__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.photoPost__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-color-text);
+  width: 100%;
+  text-decoration: none;
+}
+.photoPost__link .fas {
+  margin-right: 10px;
 }
