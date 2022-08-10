@@ -41,6 +41,13 @@ outline: none;
 --stories-bg: #524eee;
 --icon-circle-bg: #6fcf97;
   }
+  .content__joinGroup-section {
+    background-color: var(--fb-bgcolor);
+  }
+  .header__menu-tab {
+    color: var(--fb-bgcolor);
+    border-bottom: 4px solid var(--fb-white);
+  }
 }
 
 body {
