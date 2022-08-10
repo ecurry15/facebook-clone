@@ -1096,3 +1096,13 @@ flex-direction: column;
     width: 120%;
   }
 }
+
+@media only screen and (max-height: 375px) {
+.floatingMsg {
+  top: 80px;
+  overflow-x: scroll;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+}
