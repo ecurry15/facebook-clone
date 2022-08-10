@@ -100,10 +100,7 @@ margin-left: 10px;
   margin-right: 20px;
 }
 .header__mobile-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.7rem;
+  display: none;
 }
 
 
@@ -931,18 +928,18 @@ background-color: var(--button-link);
   .header__menu-tabs {
     display: none;
   }
-  /* .header__logo-search input {
-    width: 15px;
-  } */
+  .header__mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .header__menu-tabs {
     display: none;
   }
-  /* .header__logo-search input {
-    width: 15px;
-  } */
 }
 
 @media only screen and (max-width: 768px) {
