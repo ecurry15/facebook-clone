@@ -278,7 +278,7 @@ color: var(--fb-blue);
   font-size: .9rem;
   font-weight: 600;
   margin-right: 20px;
-  color: var(--fb-black);
+  color: black;
 }
 
 .header__circle-link {
