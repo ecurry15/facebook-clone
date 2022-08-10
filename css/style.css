@@ -7,7 +7,7 @@ outline: none;
 }
 
  :root {
-   --fb-create-new-text: var(--fb-black);
+   --fb-create-new-text: #090909;
    --fb-create-new-highlight: #d6d8df;
     --fb-blue: #0a86f0;
     --fb-black: #090909;
