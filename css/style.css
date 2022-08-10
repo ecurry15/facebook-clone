@@ -7,6 +7,8 @@ outline: none;
 }
 
  :root {
+   --fb-create-new-text: var(--fb-black);
+   --fb-create-new-highlight: #d6d8df;
     --fb-blue: #0a86f0;
     --fb-black: #090909;
     --fb-red: #ee2340;
@@ -27,6 +29,8 @@ outline: none;
   }
 @media (prefers-color-scheme: dark) {
   :root {
+    --fb-create-new-highlight: #b5aedf;
+    --fb-create-new-text: #7773ec;
     --fb-blue: #7773ec;
 --fb-black: #ffffff;
 --fb-red: #ee2340;
@@ -36,16 +40,12 @@ outline: none;
 --fb-white: #ffffff;
 --fb-whitebg: #1d1d42;
 --dark-color-text: #FFFFFF;
---light-color-text: #d4d4dc;
+--light-color-text: #aeaeb6;
 --button-link: #524eee;
 --stories-bg: #524eee;
 --icon-circle-bg: #6fcf97;
   }
   
-  .header__menu-tab {
-    color: var(--fb-bgcolor);
-    border-bottom: 4px solid white;
-  }
 }
 
 body {
@@ -717,7 +717,8 @@ color: var(--fb-blue);
 }
 
 .groups__createNew:hover {
-  background-color: #d6d8df;
+  background-color: var(--fb-create-new-highlight);
+  color: var(--fb-create-new-text);
 }
 
 .groups__createNew-icon {
