@@ -41,12 +41,10 @@ outline: none;
 --stories-bg: #524eee;
 --icon-circle-bg: #6fcf97;
   }
-  .content__joinGroup-section {
-    background-color: var(--fb-bgcolor);
-  }
+  
   .header__menu-tab {
     color: var(--fb-bgcolor);
-    border-bottom: 4px solid var(--fb-white);
+    border-bottom: 4px solid white;
   }
 }
 
@@ -186,7 +184,7 @@ padding-left: 22px;
   align-items: center;
   width: 600px;
   height: 62px;
-  border-bottom: 4px solid var(--fb-whitebg);
+  border-bottom: 4px solid var(--fb-white);
   color: var(--light-color-text);
   cursor: pointer;
   font-size: 1.3rem;
@@ -809,7 +807,7 @@ color: var(--fb-blue);
   position: absolute;
   width: 100%;
   bottom: 0px;
-  background-color: var(--fb-white);
+  background-color: var(--fb-whitebg);
   z-index: 100;
 }
 .joinGroup-section__group-info {
