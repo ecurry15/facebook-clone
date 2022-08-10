@@ -927,7 +927,7 @@ background-color: var(--button-link);
   font-weight: 700;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1350px) {
   .header__menu-tabs {
     display: none;
   }
